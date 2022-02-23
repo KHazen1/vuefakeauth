@@ -19,11 +19,11 @@
                             About
                         </li>
                     </router-link>
-                    <router-link to="/contact">
+                    <router-link to="/login">
                         <li 
                             class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
                         >
-                            Contact
+                            Login
                         </li>
                     </router-link>
                 </ul>
