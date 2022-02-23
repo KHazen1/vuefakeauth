@@ -1,36 +1,27 @@
 <template>
-    <div class="bg-blue-900 text-blue-200">
-        <div class="container mx-auto flex items-center justify-between">
-            <h1 class="tracking-tighter text-3xl font-thin">Basic<span class="font-normal">Router</span>
+    <div class="text-green-200 bg-green-900">
+        <div class="container flex items-center justify-between mx-auto">
+            <h1 class="text-3xl font-thin tracking-tighter">Vue<span class="font-normal">FakeAuth</span>
                 </h1>
             <nav>
                 <ul class="flex space-x-4">
                     <router-link to="/">
                         <li 
-                            class="
-                                py-8 px-4 
-                                hover:cursor-pointer hover:bg-blue-500 hover:text-blue-800
-                            "
+                            class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
                         >
                             Home
                         </li>
                     </router-link>
                     <router-link to="/about">
                         <li
-                            class="
-                                py-8 px-4
-                                hover:cursor-pointer hover:bg-blue-500 hover:text-blue-800
-                            "
+                            class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
                         >
                             About
                         </li>
                     </router-link>
                     <router-link to="/contact">
                         <li 
-                            class="
-                                py-8 px-4 
-                                hover:cursor-pointer hover:bg-blue-500 hover:text-blue-800
-                            "
+                            class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
                         >
                             Contact
                         </li>
