@@ -13,7 +13,7 @@ const loggingOut = () => {
     <div class="text-green-200 bg-green-900">
         <div class="container flex items-center justify-between mx-auto">
             <h1 class="text-3xl font-thin tracking-tighter">Vue<span class="font-normal">FakeAuth</span>
-                </h1>
+            </h1>
             <nav>
                 <ul class="flex space-x-4">
                     <router-link to="/">
@@ -40,20 +40,22 @@ const loggingOut = () => {
                             Login
                         </li>
                     </router-link>
-                    <router-link v-else :to="{ name: 'Secret' }">
-                        <li
-                            class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
-                        >
-                             Secret
-                        </li>
-                    </router-link>
-                    <button @click="loggingOut">
-                        <li
-                            class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
-                        >
-                            Logout
-                        </li>
-                    </button>
+                    <div v-else class="flex">
+                        <router-link :to="{ name: 'Secret' }">
+                            <li
+                                class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
+                            >
+                                Secret
+                            </li>
+                        </router-link>
+                        <button @click="loggingOut">
+                            <li
+                                class="px-4 py-8 hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
+                            >
+                                Logout
+                            </li>
+                        </button>
+                    </div>
                 </ul>
             </nav>
         </div>

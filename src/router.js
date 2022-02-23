@@ -26,6 +26,13 @@ const routes = [
       path: "/secret",
       name: "Secret",
       component: Secret,
+      beforeEnter: (to, from, next) => {
+        console.log(isAuthenticated);
+        if (!isAuthenticated.value) {
+          next("/login");
+        }
+        next();
+      },
     },
     {
         path: "/:pathMatch(.*)*",
